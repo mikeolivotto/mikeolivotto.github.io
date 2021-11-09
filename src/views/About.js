@@ -40,8 +40,22 @@ const Experience = () => {
           </ul>
 
         <p>...having worked with and for the likes of Sony Pictures Entertainment, Viacom, NBA, Universal Music Australia, Nine Entertainment Co, Hopsters Co-operative Brewery and many more.</p>
+
+        
+        <h2>Education</h2>
+          <ul>
+            <li>Diploma of IT (Web Development)</li>
+            <li>Cert IV Web Development</li>
+            <li>Bachelor of Business (Marketing)</li>
+          </ul>
+
+          <p style={{"backgroundColor": "#ededed", "borderRadius": "5px", "padding": "10px"}}>
+            Certifications:<br />
+            <strong>
+            JavaScript Algorithms & Data Structures </strong>(FreeCodeCamp.org)<strong>, Responsive Web Design </strong>(FreeCodeCamp.org), <strong>Google Analytics IQ </strong>(Google).
+          </p>
           <p style={{"fontSize": "0.85rem"}}><a href="https://www.linkedin.com/in/mikeolivotto/" target="_blank" rel="noreferrer noopener">View my LinkedIn for a full history</a></p>
-        </div>
+          </div>
       </div>
     </div>
   );
