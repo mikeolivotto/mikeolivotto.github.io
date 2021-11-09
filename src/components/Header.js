@@ -5,10 +5,7 @@ import Col from 'react-bootstrap/Col'
 export const Header = (props) => {
   const { name } = props;
   const style = {
-    "color": "blue",
-    "height": "60vh",
-    // "backgroundColor": "#cce3ff",
-    "border": "1px solid black"
+    "height": "200px",
   }
 
   return (

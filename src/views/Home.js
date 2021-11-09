@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import CycleText from "../components/CycleText";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -9,22 +9,28 @@ import Header from "../components/Header";
 
 const Home = () => {
   document.title = `Mike Olivotto | Web Developer`;
-  return (
-    <div>
-      <Header name="Mike Olivotto" />
 
-      <h2>Hi, I'm Mike 👋</h2>
-      <p>
-        I am a digital professional skilled in full-stack web development and
-        experienced in digital marketing & website management. Comfortable
-        translating between technical and business requirements in product
-        development, I'm a curious problem solver driven that loves to build
-        useful tools.
-      </p>
-      <p>
-        Core tech capabilities include MERN, Ruby/Rails, PostgreSQL, JavaScript,
-        HTML5, CSS3, Python.
-      </p>
+  return (
+    <div className="d-flex align-items-center w-100" style={{"height": "100%"}}>
+      <div className="d-flex justify-content-center">
+        <div className="col-md-10">
+          {/* <Header name="" /> */}
+            <p style={{"marginBottom": "-5px"}}>Hi, I'm</p>
+            <h1 className="display-1" style={{"display": "inline"}}>Mike Olivotto</h1> <span className="h1">👋</span>
+            <h2>
+              <CycleText />
+            </h2>
+            <p style={{"marginTop": "16px"}}>
+              Experienced in web app development, website management and digital marketing. A curious problem solver who builds useful (and sometimes just meme-worthy) tools.
+            </p>
+            <p>
+              Core tech capabilities include <strong>
+                React, Node.js, Ruby/Rails, PostgreSQL, JavaScript,
+                HTML5, CSS3, Python
+              </strong>.
+            </p>
+        </div>
+      </div>
     </div>
   );
 };

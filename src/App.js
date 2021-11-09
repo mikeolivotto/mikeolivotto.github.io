@@ -15,11 +15,12 @@ import Contact from "./views/Contact";
 const App = () => {
   const style = {
     "fontFamily": "Open Sans', sans-serif",
-    "fontWeight": "400"
+    "fontWeight": "400",
+    "height": "100vh"
   }
   return (
     <Router>
-      <Container style={style}>
+      <Container className="d-flex flex-column" style={style}>
         <Navigation />
 
         <Routes>
