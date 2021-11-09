@@ -8,7 +8,7 @@ export default function ProjectCard(props) {
     <div>
       <Col>
         <Card>
-          <Card.Img variant="top" src={img} />
+        <Card.Link href={url}><Card.Img variant="top" src={img} /></Card.Link>
           <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Link href={url}>{url}</Card.Link>

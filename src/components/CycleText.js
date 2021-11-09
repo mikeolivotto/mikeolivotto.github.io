@@ -19,7 +19,7 @@ export default function CycleText() {
             return setDescriptor("Full stack web developer");
         // code block
       }
-    }, 650);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, [descriptor]);
