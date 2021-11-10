@@ -10,7 +10,6 @@ import Navigation from "./components/Nav";
 import Home from "./views/Home";
 import Projects from "./views/Projects";
 import About from "./views/About";
-import Contact from "./views/Contact";
 
 const App = () => {
   const style = {
@@ -27,7 +26,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Container>
     </Router>
