@@ -6,6 +6,7 @@ const Contact = () => {
   return (
     <div>
         <Header name="Contact me"/>
+        Maybe
     </div>
   )
 }
