@@ -39,6 +39,13 @@ const projects = [
     features: "3 difficulty modes, multi-choice, score keeping, display corrected answers at conclusion of game",
     img: "/img/trivia_time.png"
   },
+  {
+    title: "Personal website",
+    url: "https://mikeolivotto.com/pre-2021-personal-site/",
+    description: "Original personal profile website, built in 2016",
+    tech: "HTML, CSS, Materialize CSS",
+    img: "./img/personalsite.png"
+  }
 ];
 
 

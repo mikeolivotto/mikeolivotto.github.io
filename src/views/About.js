@@ -8,7 +8,7 @@ const Experience = () => {
       <Header name="About" />
       <div className="d-flex justify-content-center">
         <div className="align-items-center col-12 col-md-10 col-lg-8">
-          <p style={{ textAlign: "center" }}>
+          <p style={{ textAlign: "center", paddingBottom: "20px" }}>
             Web Developer 👨🏻‍💻 | Digital Marketer 📈 | Music Nerd 🎸 | Tech geek
             💻
           </p>

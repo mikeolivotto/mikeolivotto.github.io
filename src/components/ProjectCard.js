@@ -17,9 +17,7 @@ export default function ProjectCard(props) {
               <li>
                 <strong>Tech:</strong> {tech}
               </li>
-              <li>
-                <strong>Features:</strong> {features}
-              </li>
+              {features && <li><strong>Features:</strong> {features}</li>}
             </ul>
           </Card.Body>
         </Card>
