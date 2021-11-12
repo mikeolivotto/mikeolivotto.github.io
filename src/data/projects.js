@@ -24,6 +24,14 @@ const projects = [
     img: "/img/markdown.gif"
   },
   {
+    title: "Bitcoin Tracker",
+    url: "https://mikeolivotto.com/bitcoin-tracker/",
+    description: "A bitcoin price tracker to display the last 30 days of BTC prices for any given currency",
+    tech: "React, Chart.js, Bootstrap",
+    features: "Dynamically re-render price chart upon selecting desired currency",
+    img: "/img/bitcoin-tracker.png"
+  },
+  {
     title: "Broken Bad",
     url: "https://broken-bad.netlify.app/",
     description: "Built during a 24-hour challenge, this app connects to the Breaking Bad API to deliver key information on all characters and Episodes from Breaking Bad and Better Call Saul",
