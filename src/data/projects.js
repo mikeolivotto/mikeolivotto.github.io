@@ -48,6 +48,13 @@ const projects = [
     img: "/img/trivia_time.png"
   },
   {
+    title: "Happy Seizure",
+    url: "https://happyseizure.com/",
+    description: "Personal blog documenting travels & music. Originally maintained in WordPress",
+    tech: "Jekyll, Ruby",
+    img: "/img/happyseizure.png"
+  },
+  {
     title: "Personal website",
     url: "https://mikeolivotto.com/pre-2021-personal-site/",
     description: "Original personal profile website, built in 2016",
@@ -56,6 +63,8 @@ const projects = [
   }
 ];
 
+
+// TEMPLATE OBJECT
 
 // {
 //     title: "XXX",

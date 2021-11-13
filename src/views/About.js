@@ -1,8 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
+import ReactGA from 'react-ga';
 
 const Experience = () => {
+
   document.title = `About me | Mike Olivotto`;
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <div>
       <Header name="About" />
@@ -14,11 +18,11 @@ const Experience = () => {
           </p>
           <p>
             Experienced in web app development, website management and digital
-            marketing, I like to use technology to solve problems and build
+            marketing, I use technology to solve problems and build
             useful (and sometimes just meme-worthy) tools.
           </p>
           <p>
-            I'm also obsessed with music, love to cook, and have a weird interest in
+            I'm also music-obsessed, love to cook, and have a weird interest in
             unconventional travel destinations.
           </p>
           <p style={{"backgroundColor": "#ededed", "borderRadius": "5px", "padding": "10px"}}>
@@ -45,14 +49,18 @@ const Experience = () => {
         <h2>Education</h2>
           <ul>
             <li>Diploma of IT (Web Development)</li>
-            <li>Cert IV Web Development</li>
+            <li>Cert IV Web Design</li>
             <li>Bachelor of Business (Marketing)</li>
           </ul>
 
           <p style={{"backgroundColor": "#ededed", "borderRadius": "5px", "padding": "10px"}}>
             Certifications:<br />
-            <strong>
-            JavaScript Algorithms & Data Structures </strong>(FreeCodeCamp.org)<strong>, Responsive Web Design </strong>(FreeCodeCamp.org), <strong>Google Analytics IQ </strong>(Google).
+            
+            <ul>
+              <li><strong>JavaScript Algorithms & Data Structures </strong> (FreeCodeCamp.org)</li>
+              <li><strong>Responsive Web Design</strong> (FreeCodeCamp.org)</li>
+              <li><strong>Google Analytics IQ</strong> (Google)</li>
+            </ul>
           </p>
           <p style={{"fontSize": "0.85rem"}}><a href="https://www.linkedin.com/in/mikeolivotto/" target="_blank" rel="noreferrer noopener">View my LinkedIn for a full history</a></p>
           </div>
