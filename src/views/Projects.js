@@ -3,9 +3,11 @@ import Header from "../components/Header";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "../components/ProjectCard"
 import projects from '../data/projects'
+import ReactGA from 'react-ga';
 
 const Projects = () => {
   document.title = `Projects | Mike Olivotto`;
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div>
       <Header name="Projects" />
