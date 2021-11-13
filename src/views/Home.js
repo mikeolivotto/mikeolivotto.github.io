@@ -1,9 +1,10 @@
 import React from "react";
 import CycleText from "../components/CycleText";
+import ReactGA from 'react-ga';
 
 const Home = () => {
   document.title = `Mike Olivotto | Web Developer`;
-
+  ReactGA.pageview(window.location.pathname + window.location.search);
   return (
     <div className="d-flex align-items-center" style={{"height": "100%"}}>
       <div className="d-flex justify-content-center w-100">
