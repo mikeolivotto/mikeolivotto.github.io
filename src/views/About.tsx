@@ -1,6 +1,6 @@
 import React, { CSSProperties, useMemo } from "react";
 import Header from "../components/Header";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 import { generatePageTitle } from "../shared/utils";
 
 const About: React.FC = () => {
@@ -11,17 +11,17 @@ const About: React.FC = () => {
 
   const introParagraphStyle: CSSProperties = {
     textAlign: "center",
-    paddingBottom: "20px"
+    paddingBottom: "20px",
   };
 
   const highlightBoxStyle: CSSProperties = {
     backgroundColor: "#ededed",
     borderRadius: "5px",
-    padding: "10px"
+    padding: "10px",
   };
 
   const linkStyle: CSSProperties = {
-    fontSize: "0.85rem"
+    fontSize: "0.85rem",
   };
 
   return (
@@ -30,23 +30,24 @@ const About: React.FC = () => {
       <div className="d-flex justify-content-center">
         <div className="align-items-center col-12 col-md-10 col-lg-8">
           <p style={introParagraphStyle}>
-            Web Developer 👨🏻‍💻 | ex-Digital Marketer 📈 | Music Nerd 🎸 | Tech geek
-            💻
+            Web Developer 👨🏻‍💻 | ex-Digital Marketer 📈 | Music Nerd 🎸 | Tech
+            geek 💻
           </p>
           <p>
             Experienced in web app development, website management and digital
-            marketing, I use technology to solve problems and build
-            useful (and sometimes just meme-worthy) tools.
+            marketing, I use technology to solve problems and build useful (and
+            sometimes just meme-worthy) tools.
           </p>
           <p>
             I'm also music-obsessed, love to cook, and have a weird interest in
             unconventional travel destinations.
           </p>
           <p style={highlightBoxStyle}>
-            Core tech capabilities include:<br />
+            Core tech capabilities include:
+            <br />
             <strong>
-              React, Node.js, Typescript / JavaScript, GraphQL (Apollo), Ruby/Rails, PostgreSQL, HTML5, CSS3,
-              Python
+              React, Node.js, Typescript / JavaScript, GraphQL (Apollo),
+              Ruby/Rails, PostgreSQL, HTML5, CSS3, Python
             </strong>
             .
           </p>
@@ -61,25 +62,41 @@ const About: React.FC = () => {
             <li>Account Manager</li>
           </ul>
 
-          <p>...having worked with and for the likes of Sony Pictures Entertainment, Viacom, NBA, Universal Music Australia, Nine Entertainment Co, Hopsters Co-operative Brewery and many more.</p>
+          <p>
+            ...having worked with and for the likes of Ansarada, Sony Pictures
+            Entertainment, Universal Music Australia, Nine
+            Entertainment Co, Drova, Hopsters Co-operative Brewery and
+            many more.
+          </p>
 
           <h2>Education</h2>
           <ul>
-            <li>Diploma of IT (Web Development)</li>
-            <li>Cert IV Web Design</li>
+            <li>Diploma of IT (Web Development) </li>
             <li>Bachelor of Business (Marketing)</li>
           </ul>
 
           <p style={highlightBoxStyle}>
-            Certifications:<br />
+            Certifications:
+            <br />
             <ul>
-              <li><strong>JavaScript Algorithms & Data Structures </strong> (FreeCodeCamp.org)</li>
-              <li><strong>Responsive Web Design</strong> (FreeCodeCamp.org)</li>
-              <li><strong>Google Analytics IQ</strong> (Google)</li>
+              <li>
+                <strong>JavaScript Algorithms & Data Structures </strong>{" "}
+                (FreeCodeCamp.org)
+              </li>
+              <li>
+                <strong>Responsive Web Design</strong> (FreeCodeCamp.org)
+              </li>
+              <li>
+                <strong>Google Analytics IQ</strong> (Google)
+              </li>
             </ul>
           </p>
           <p style={linkStyle}>
-            <a href="https://www.linkedin.com/in/mikeolivotto/" target="_blank" rel="noreferrer noopener">
+            <a
+              href="https://www.linkedin.com/in/mikeolivotto/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               View my LinkedIn for a full history
             </a>
           </p>

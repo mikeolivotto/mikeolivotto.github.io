@@ -36,5 +36,51 @@
     </script>
   </head>
   <body>
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        padding: 2rem;
+      }
+      .emoji {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+        animation: bounce 1s infinite;
+      }
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 0;
+      }
+      p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+      }
+      .redirect-message {
+        font-size: 1rem;
+        opacity: 0.8;
+        margin-top: 2rem;
+      }
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+    </style>
+    <div class="container">
+      <div class="emoji">🚀</div>
+      <h1>404</h1>
+      <p>Whoops! This page went on an adventure.</p>
+      <p class="redirect-message">Redirecting you back to safety...</p>
+    </div>
   </body>
 </html>

@@ -8,7 +8,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ name }) => {
   const style: CSSProperties = {
-    height: "200px",
+    height: "100px",
   };
 
   return (
