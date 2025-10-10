@@ -1,7 +1,16 @@
-const projects = [
+export interface Project {
+  title: string;
+  demoUrl?: string;
+  githubUrl?: string;
+  description: string;
+  tech: string;
+  features?: string;
+  img: string;
+}
+
+const projects: Project[] = [
   {
     title: "Tune Geeks - Marketplace for Music",
-    demoUrl: "",
     githubUrl: "https://github.com/mikeolivotto/tune-geeks",
     description: "A prototype marketplace to buy and sell music memorabilia.",
     tech: "Ruby on Rails w/ PostgreSQL, Heroku",
@@ -38,7 +47,6 @@ const projects = [
   {
     title: "Broken Bad - Explore Breaking Bad",
     demoUrl: "https://broken-bad.netlify.app/",
-    githubUrl: "",
     description: "Built during a 24-hour challenge, this app connects to the Breaking Bad API to deliver key information on all characters and Episodes from Breaking Bad and Better Call Saul",
     tech: "React, SemanticUI, Netlify",
     features: "Dynamically filter/search characters, pull information on any given character or episode, random quotes",
@@ -70,18 +78,5 @@ const projects = [
     img: "./img/personalsite.png"
   }
 ];
-
-
-// TEMPLATE OBJECT
-
-// {
-//     title: "XXX",
-//     demoUrl: "XXX",
-//     githubUrl: "XXX"
-//     description: "XXX",
-//     tech: "XXX",
-//     features: "XXX",
-//     img: "./logo512.png"
-//   },
 
 export default projects;
