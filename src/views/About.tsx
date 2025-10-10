@@ -1,18 +1,35 @@
-import React from "react";
+import React, { CSSProperties, useMemo } from "react";
 import Header from "../components/Header";
 import ReactGA from 'react-ga';
+import { generatePageTitle } from "../shared/utils";
 
-const Experience = () => {
+const About: React.FC = () => {
+  const pageTitle = useMemo(() => generatePageTitle("About me"), []);
+  document.title = pageTitle;
 
-  document.title = `About me | Mike Olivotto`;
   ReactGA.pageview(window.location.pathname + window.location.search);
+
+  const introParagraphStyle: CSSProperties = {
+    textAlign: "center",
+    paddingBottom: "20px"
+  };
+
+  const highlightBoxStyle: CSSProperties = {
+    backgroundColor: "#ededed",
+    borderRadius: "5px",
+    padding: "10px"
+  };
+
+  const linkStyle: CSSProperties = {
+    fontSize: "0.85rem"
+  };
 
   return (
     <div>
       <Header name="About" />
       <div className="d-flex justify-content-center">
         <div className="align-items-center col-12 col-md-10 col-lg-8">
-          <p style={{ textAlign: "center", paddingBottom: "20px" }}>
+          <p style={introParagraphStyle}>
             Web Developer 👨🏻‍💻 | ex-Digital Marketer 📈 | Music Nerd 🎸 | Tech geek
             💻
           </p>
@@ -25,7 +42,7 @@ const Experience = () => {
             I'm also music-obsessed, love to cook, and have a weird interest in
             unconventional travel destinations.
           </p>
-          <p style={{"backgroundColor": "#ededed", "borderRadius": "5px", "padding": "10px"}}>
+          <p style={highlightBoxStyle}>
             Core tech capabilities include:<br />
             <strong>
               React, Node.js, Typescript / JavaScript, GraphQL (Apollo), Ruby/Rails, PostgreSQL, HTML5, CSS3,
@@ -44,30 +61,32 @@ const Experience = () => {
             <li>Account Manager</li>
           </ul>
 
-        <p>...having worked with and for the likes of Sony Pictures Entertainment, Viacom, NBA, Universal Music Australia, Nine Entertainment Co, Hopsters Co-operative Brewery and many more.</p>
+          <p>...having worked with and for the likes of Sony Pictures Entertainment, Viacom, NBA, Universal Music Australia, Nine Entertainment Co, Hopsters Co-operative Brewery and many more.</p>
 
-        
-        <h2>Education</h2>
+          <h2>Education</h2>
           <ul>
             <li>Diploma of IT (Web Development)</li>
             <li>Cert IV Web Design</li>
             <li>Bachelor of Business (Marketing)</li>
           </ul>
 
-          <p style={{"backgroundColor": "#ededed", "borderRadius": "5px", "padding": "10px"}}>
+          <p style={highlightBoxStyle}>
             Certifications:<br />
-            
             <ul>
               <li><strong>JavaScript Algorithms & Data Structures </strong> (FreeCodeCamp.org)</li>
               <li><strong>Responsive Web Design</strong> (FreeCodeCamp.org)</li>
               <li><strong>Google Analytics IQ</strong> (Google)</li>
             </ul>
           </p>
-          <p style={{"fontSize": "0.85rem"}}><a href="https://www.linkedin.com/in/mikeolivotto/" target="_blank" rel="noreferrer noopener">View my LinkedIn for a full history</a></p>
-          </div>
+          <p style={linkStyle}>
+            <a href="https://www.linkedin.com/in/mikeolivotto/" target="_blank" rel="noreferrer noopener">
+              View my LinkedIn for a full history
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Experience;
+export default About;

@@ -1,9 +1,17 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
+import { Project } from "../data/projects";
 
-export default function ProjectCard(props) {
-  const { title, demoUrl, githubUrl, description, tech, features, img } = props;
+const ProjectCard: React.FC<Project> = ({
+  title,
+  demoUrl,
+  githubUrl,
+  description,
+  tech,
+  features,
+  img,
+}) => {
   return (
     <div>
       <Col>
@@ -16,7 +24,7 @@ export default function ProjectCard(props) {
             {demoUrl && <Card.Link href={demoUrl}>Demo</Card.Link>}
             {githubUrl && (
               <Card.Link href={githubUrl}>
-                <i class="fab fa-github" aria-label="GitHub" />
+                <i className="fab fa-github" aria-label="GitHub" />
               </Card.Link>
             )}
             <Card.Text>{description}</Card.Text>
@@ -35,4 +43,6 @@ export default function ProjectCard(props) {
       </Col>
     </div>
   );
-}
+};
+
+export default ProjectCard;
