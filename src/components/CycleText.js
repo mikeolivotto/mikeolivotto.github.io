@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from "react";
 
 export default function CycleText() {
-  const [descriptor, setDescriptor] = useState("Full stack web developer");
+  const [descriptor, setDescriptor] = useState("Web developer");
 
   useEffect(() => {
     const interval = setInterval(() => {
 
       switch (descriptor) {
-        case "Full stack web developer":
-          return setDescriptor("Digital marketer");
-        case "Digital marketer":
-            return setDescriptor("Music nerd");
+        case "Web developer":
+          return setDescriptor("Music nerd");
         case "Music nerd":
             return setDescriptor("Technology geek");
         case "Technology geek":
-            return setDescriptor("Full stack web developer");
+            return setDescriptor("Web developer");
         default:
-            return setDescriptor("Full stack web developer");
+            return setDescriptor("Web developer");
         // code block
       }
     }, 1000);

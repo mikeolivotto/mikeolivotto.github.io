@@ -23,12 +23,12 @@ export const Navigation = () => {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="https://github.com/mikeolivotto">
-            <i class="fab fa-github" aria-label="GitHub"></i>
+            <i class="fab fa-github" aria-label="GitHub" />
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="https://www.linkedin.com/in/mikeolivotto/">
-            <i class="fab fa-linkedin" aria-label="LinkedIn"></i>
+            <i class="fab fa-linkedin" aria-label="LinkedIn" />
           </Nav.Link>
         </Nav.Item>
       </Nav>

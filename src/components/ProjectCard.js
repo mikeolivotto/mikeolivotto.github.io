@@ -3,21 +3,32 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 
 export default function ProjectCard(props) {
-    const {title, url, description, tech, features, img} = props
+  const { title, demoUrl, githubUrl, description, tech, features, img } = props;
   return (
     <div>
       <Col>
         <Card>
-        <Card.Link href={url}><Card.Img variant="top" src={img} /></Card.Link>
+          <Card.Link href={demoUrl || githubUrl || "#"}>
+            <Card.Img variant="top" src={img} />
+          </Card.Link>
           <Card.Body>
             <Card.Title>{title}</Card.Title>
-            <Card.Link href={url}>{url}</Card.Link>
+            {demoUrl && <Card.Link href={demoUrl}>Demo</Card.Link>}
+            {githubUrl && (
+              <Card.Link href={githubUrl}>
+                <i class="fab fa-github" aria-label="GitHub" />
+              </Card.Link>
+            )}
             <Card.Text>{description}</Card.Text>
             <ul>
               <li>
                 <strong>Tech:</strong> {tech}
               </li>
-              {features && <li><strong>Features:</strong> {features}</li>}
+              {features && (
+                <li>
+                  <strong>Features:</strong> {features}
+                </li>
+              )}
             </ul>
           </Card.Body>
         </Card>
