@@ -13,7 +13,7 @@ const Experience = () => {
       <div className="d-flex justify-content-center">
         <div className="align-items-center col-12 col-md-10 col-lg-8">
           <p style={{ textAlign: "center", paddingBottom: "20px" }}>
-            Web Developer 👨🏻‍💻 | Digital Marketer 📈 | Music Nerd 🎸 | Tech geek
+            Web Developer 👨🏻‍💻 | ex-Digital Marketer 📈 | Music Nerd 🎸 | Tech geek
             💻
           </p>
           <p>
@@ -28,7 +28,7 @@ const Experience = () => {
           <p style={{"backgroundColor": "#ededed", "borderRadius": "5px", "padding": "10px"}}>
             Core tech capabilities include:<br />
             <strong>
-              React, Node.js, Ruby/Rails, PostgreSQL, JavaScript, HTML5, CSS3,
+              React, Node.js, Typescript / JavaScript, GraphQL (Apollo), Ruby/Rails, PostgreSQL, HTML5, CSS3,
               Python
             </strong>
             .
@@ -36,6 +36,7 @@ const Experience = () => {
           <h2>Experience</h2>
           <p>Some of the roles I have held...</p>
           <ul>
+            <li>Front End Engineer/Developer</li>
             <li>Website administrator</li>
             <li>SEO Consultant</li>
             <li>Digital Marketing Manager</li>

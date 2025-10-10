@@ -15,7 +15,8 @@ const Projects = () => {
         {projects.map((project, index) => <ProjectCard
             key={index} 
             title={project.title} 
-            url={project.url} 
+            demoUrl={project.demoUrl}
+            githubUrl={project.githubUrl}
             description={project.description} 
             tech={project.tech} 
             features={project.features} 
