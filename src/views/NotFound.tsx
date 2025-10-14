@@ -1,5 +1,4 @@
 import React, { CSSProperties, useMemo } from "react";
-import { Link } from "react-router-dom";
 import ReactGA from "react-ga";
 import { generatePageTitle } from "../shared/utils";
 
@@ -31,20 +30,17 @@ const NotFound: React.FC = () => {
     color: "#6c757d"
   };
 
-  const linkStyle: CSSProperties = {
-    fontSize: "1.2rem",
-    textDecoration: "none"
-  };
 
-  const messages = [
+
+  const messages = useMemo(() => [
     "Oops! This page took a wrong turn at Albuquerque.",
     "Well, this is awkward... The page went on vacation.",
     "Looks like this page is playing hide and seek... and winning."
-  ];
+  ], []);
 
   const randomMessage = useMemo(
     () => messages[Math.floor(Math.random() * messages.length)],
-    []
+    [messages]
   );
 
   return (
