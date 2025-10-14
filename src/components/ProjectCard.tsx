@@ -16,14 +16,30 @@ const ProjectCard: React.FC<Project> = ({
     <div>
       <Col>
         <Card>
-          <Card.Link href={demoUrl || githubUrl || "#"}>
+          <Card.Link
+            href={demoUrl || githubUrl || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Card.Img variant="top" src={img} />
           </Card.Link>
           <Card.Body>
             <Card.Title>{title}</Card.Title>
-            {demoUrl && <Card.Link href={demoUrl}>Demo</Card.Link>}
+            {demoUrl && (
+              <Card.Link
+                href={demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo
+              </Card.Link>
+            )}
             {githubUrl && (
-              <Card.Link href={githubUrl}>
+              <Card.Link
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fab fa-github" aria-label="GitHub" />
               </Card.Link>
             )}
