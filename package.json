@@ -59,6 +59,12 @@
     "websocket-driver": "0.7.5",
     "loader-utils": "2.0.4"
   },
+  "overrides": {
+    "js-yaml": "4.3.1",
+    "browserslist": "4.28.9",
+    "@babel/core": "7.29.7",
+    "@babel/runtime": "7.29.7"
+  },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^26.4.1",
