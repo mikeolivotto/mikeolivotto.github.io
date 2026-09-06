@@ -13,8 +13,7 @@ const projects: Project[] = [
     title: "Concert Tracker",
     demoUrl: "",
     githubUrl: "https://github.com/mikeolivotto/concert-tracker",
-    description:
-      "An app for tracking live music events I have attended",
+    description: "An app for tracking live music events I have attended",
     tech: "Next.js 15 with Turbopack, React 19, TypeScript, PostgreSQL (Supabase), Drizzle ORM, Tailwind CSS, react-hook-form, Zod, Docker + Nginx",
     features:
       "Full concert logging with date/venue/artist tracking, chronological concert history with statistics, public profile sharing, text search with autocomplete, form validation.",

@@ -1,1 +1,1 @@
-export const PAGE_TITLE_PREPEND = "Mike Olivotto | "
+export const PAGE_TITLE_PREPEND = "Mike Olivotto | ";

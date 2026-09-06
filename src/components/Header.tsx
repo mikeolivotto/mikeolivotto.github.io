@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 interface HeaderProps {
   name: string;
@@ -13,7 +13,10 @@ export const Header: React.FC<HeaderProps> = ({ name }) => {
 
   return (
     <Row className="mb-3">
-      <Col className="d-flex justify-content-center align-items-center" style={style}>
+      <Col
+        className="d-flex justify-content-center align-items-center"
+        style={style}
+      >
         <h1>{name}</h1>
       </Col>
     </Row>

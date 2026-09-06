@@ -10,33 +10,34 @@ const NotFound: React.FC = () => {
 
   const containerStyle: CSSProperties = {
     height: "100%",
-    textAlign: "center"
+    textAlign: "center",
   };
 
   const emojiStyle: CSSProperties = {
     fontSize: "5rem",
-    marginBottom: "1rem"
+    marginBottom: "1rem",
   };
 
   const headingStyle: CSSProperties = {
     fontSize: "4rem",
     fontWeight: 700,
-    marginBottom: "1rem"
+    marginBottom: "1rem",
   };
 
   const messageStyle: CSSProperties = {
     fontSize: "1.5rem",
     marginBottom: "2rem",
-    color: "#6c757d"
+    color: "#6c757d",
   };
 
-
-
-  const messages = useMemo(() => [
-    "Oops! This page took a wrong turn at Albuquerque.",
-    "Well, this is awkward... The page went on vacation.",
-    "Looks like this page is playing hide and seek... and winning."
-  ], []);
+  const messages = useMemo(
+    () => [
+      "Oops! This page took a wrong turn at Albuquerque.",
+      "Well, this is awkward... The page went on vacation.",
+      "Looks like this page is playing hide and seek... and winning.",
+    ],
+    []
+  );
 
   const randomMessage = useMemo(
     () => messages[Math.floor(Math.random() * messages.length)],

@@ -4,19 +4,19 @@ Development
 
 - Run locally:
 
-	```bash
-	yarn dev
-	# or
-	npm run dev
-	```
+  ```bash
+  yarn dev
+  # or
+  npm run dev
+  ```
 
 - Build production bundle:
 
-	```bash
-	yarn build
-	# or
-	npm run build
-	```
+  ```bash
+  yarn build
+  # or
+  npm run build
+  ```
 
 Deployment
 

@@ -1,0 +1,7 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "rules": {
+    "max-len": ["warn", { "code": 80 }],
+    "testing-library/prefer-screen-queries": "off"
+  }
+}

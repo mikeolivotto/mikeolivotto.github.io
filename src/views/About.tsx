@@ -46,7 +46,9 @@ const About: React.FC = () => {
             Core tech capabilities include:
             <br />
             <strong>
-              React, Next.js, TypeScript / JavaScript, Node.js, GraphQL (Apollo), PostgreSQL, Design Systems (MUI, Tailwind CSS), Automated Testing (Jest, Cypress, Playwright), HTML5, CSS3, Python
+              React, Next.js, TypeScript / JavaScript, Node.js, GraphQL
+              (Apollo), PostgreSQL, Design Systems (MUI, Tailwind CSS),
+              Automated Testing (Jest, Cypress, Playwright), HTML5, CSS3, Python
             </strong>
             .
           </p>
@@ -63,9 +65,8 @@ const About: React.FC = () => {
 
           <p>
             ...having worked with and for the likes of Ansarada, Sony Pictures
-            Entertainment, Universal Music Australia, Nine
-            Entertainment Co, Drova, Hopsters Co-operative Brewery and
-            many more.
+            Entertainment, Universal Music Australia, Nine Entertainment Co,
+            Drova, Hopsters Co-operative Brewery and many more.
           </p>
 
           <h2>Education</h2>
