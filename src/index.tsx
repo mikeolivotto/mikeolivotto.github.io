@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 
 // Fix for mobile viewport height issue
@@ -17,4 +17,7 @@ window.addEventListener('resize', setViewportHeight);
 window.addEventListener('orientationchange', setViewportHeight);
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(<App />);
+}
