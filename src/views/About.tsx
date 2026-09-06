@@ -46,8 +46,7 @@ const About: React.FC = () => {
             Core tech capabilities include:
             <br />
             <strong>
-              React, Node.js, Typescript / JavaScript, GraphQL (Apollo),
-              Ruby/Rails, PostgreSQL, HTML5, CSS3, Python
+              React, Next.js, TypeScript / JavaScript, Node.js, GraphQL (Apollo), PostgreSQL, Design Systems (MUI, Tailwind CSS), Automated Testing (Jest, Cypress, Playwright), HTML5, CSS3, Python
             </strong>
             .
           </p>
@@ -73,24 +72,9 @@ const About: React.FC = () => {
           <ul>
             <li>Diploma of IT (Web Development) </li>
             <li>Bachelor of Business (Marketing)</li>
+            <li>Certificate IV in Music Business</li>
           </ul>
 
-          <p style={highlightBoxStyle}>
-            Certifications:
-            <br />
-            <ul>
-              <li>
-                <strong>JavaScript Algorithms & Data Structures </strong>{" "}
-                (FreeCodeCamp.org)
-              </li>
-              <li>
-                <strong>Responsive Web Design</strong> (FreeCodeCamp.org)
-              </li>
-              <li>
-                <strong>Google Analytics IQ</strong> (Google)
-              </li>
-            </ul>
-          </p>
           <p style={linkStyle}>
             <a
               href="https://www.linkedin.com/in/mikeolivotto/"

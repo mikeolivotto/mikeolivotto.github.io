@@ -10,6 +10,17 @@ export interface Project {
 
 const projects: Project[] = [
   {
+    title: "Concert Tracker",
+    demoUrl: "",
+    githubUrl: "https://github.com/mikeolivotto/concert-tracker",
+    description:
+      "An app for tracking live music events I have attended",
+    tech: "Next.js 15 with Turbopack, React 19, TypeScript, PostgreSQL (Supabase), Drizzle ORM, Tailwind CSS, react-hook-form, Zod, Docker + Nginx",
+    features:
+      "Full concert logging with date/venue/artist tracking, chronological concert history with statistics, public profile sharing, text search with autocomplete, form validation.",
+    img: "/img/concert-tracker.gif",
+  },
+  {
     title: "JB Price Checker",
     demoUrl: "https://mikeolivotto.com/jb-price-checker/",
     githubUrl: "https://github.com/mikeolivotto/jb-price-checker/",
@@ -71,19 +82,18 @@ const projects: Project[] = [
       "Dynamically re-render price chart upon selecting desired currency",
     img: "/img/bitcoin-tracker.png",
   },
-  {
-    title: "Broken Bad - Explore Breaking Bad",
-    demoUrl: "https://broken-bad.netlify.app/",
-    description:
-      "Built during a 24-hour challenge, this app connects to the Breaking Bad API to deliver key information on all characters and Episodes from Breaking Bad and Better Call Saul",
-    tech: "React, SemanticUI, Netlify",
-    features:
-      "Dynamically filter/search characters, pull information on any given character or episode, random quotes",
-    img: "/img/broken_bad.png",
-  },
+  // {
+  //   title: "Broken Bad - Explore Breaking Bad",
+  //   demoUrl: "https://broken-bad.netlify.app/",
+  //   description:
+  //     "Built during a 24-hour challenge, this app connects to the Breaking Bad API to deliver key information on all characters and Episodes from Breaking Bad and Better Call Saul",
+  //   tech: "React, SemanticUI, Netlify",
+  //   features:
+  //     "Dynamically filter/search characters, pull information on any given character or episode, random quotes",
+  //   img: "/img/broken_bad.png",
+  // },
   {
     title: "Trivia Time - Ruby CLI app",
-    demoUrl: "https://github.com/mikeolivotto/t1a3",
     githubUrl: "https://github.com/mikeolivotto/t1a3",
     description: "A multiple-choice, terminal-based trivia app.",
     tech: "Ruby, RSpec testing suite",
